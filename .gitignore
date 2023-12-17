@@ -17,6 +17,7 @@ sdist
 develop-eggs
 .installed.cfg
 .vscode
+.idea
 
 # Installer logs
 pip-log.txt
