@@ -19,6 +19,9 @@ develop-eggs
 .vscode
 .idea
 
+# Sample data
+data/
+
 # Installer logs
 pip-log.txt
 
