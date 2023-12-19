@@ -148,6 +148,8 @@ class EpubToAudiobook:
             .replace(":", ", ")
             .replace("''", ", ")
             .replace("’", "'")
+            .replace(" . . . ", ", ")
+            .replace("... ", ", ")
             .replace("\n", " \n")
             .strip()
         )
@@ -169,7 +171,7 @@ class EpubToAudiobook:
                 continue
             print("Length: " + str(len(text)))
             print("Part: " + str(len(self.chapters_to_read) + 1))
-            print(text[:256])
+            print(text[:1024])
             self.chapters_to_read.append(text)
         print("Number of chapters to read: " + str(len(self.chapters_to_read)))
         if self.end == 999:
